@@ -153,12 +153,6 @@ public class Main {
     private static void searchBrand() {
         System.out.print("Enter Brand: ");
         String brand = scanner.nextLine();
-        ArrayList<Stock> found = bst.searchByBrand(brand);
-        if (!found.isEmpty()) {
-            System.out.println("\n--- Found " + found.size() + " stock(s) for brand: " + brand + " ---");
-            for (Stock stock : found) {
-                System.out.println(stock);
-            }
         } else {
             System.out.println("Not found.");
         }
